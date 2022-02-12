@@ -13,3 +13,8 @@ Ce répertoire est divisé en 2 dossiers l'un contenant les données et l'autre 
 
 On a créé un outil automatisé permettant selon les caractéristiques entrées de générer le score ainsi que la probabilité de défaut d'un emprunteur. Il est accessible ici [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/aadmberrada/linux_hmeq/main/app.py)
 
+## Demo de l'application:
+
+Voici une petite démonstration de l'applicaion créée :
+
+![Example of Streamlit|635x380](https://raw.githubusercontent.com/aadmberrada/Linux_HMEQ/main/Ameliorations/2_Data/Demo_streamlit.gif)
