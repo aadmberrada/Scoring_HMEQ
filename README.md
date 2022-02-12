@@ -17,4 +17,4 @@ On a créé un outil automatisé permettant selon les caractéristiques entrées
 
 Voici une petite démonstration de l'application créée :
 
-![Example of Streamlit|635x380](https://raw.githubusercontent.com/aadmberrada/Linux_HMEQ/main/Ameliorations/2_Data/Demo_streamlit.gif)
+![Example of Streamlit|635x680](https://raw.githubusercontent.com/aadmberrada/Linux_HMEQ/main/Ameliorations/2_Data/Demo_streamlit.gif)
