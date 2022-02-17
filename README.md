@@ -18,3 +18,11 @@ On a créé un outil automatisé permettant selon les caractéristiques entrées
 Voici une petite démonstration de l'application créée :
 
 ![Example of Streamlit|635x680](https://raw.githubusercontent.com/aadmberrada/Linux_HMEQ/main/Ameliorations/2_Data/Demo_streamlit.gif)
+
+
+## Usage
+ - Prerequis
+ ```pip install -r requirements.txt```
+
+ - App Web 
+ ```streamlit run app.py```
