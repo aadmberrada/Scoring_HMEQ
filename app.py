@@ -81,8 +81,8 @@ DEBTINC = st.text_input("Entrez votre ratio d'endettement en %")
 st.write("Indication : La moyenne est de ", round(data.DEBTINC.mean(), 2))
 
 
-inputs = {"Civilité" : CIVILITÉ, "Prénom et Nom" : str(FIRSTNAME) +str(' ') +str(LASTNAME), "Montant du prêt demandé":LOAN, "Montant dû sur l’hypothèque existant":MORTDUE, "Valeur du bien actue":VALUE, 
-        "But du prêt":REASON, "Catégorie professionnelle":JOB,  "Nombre d’années d'experience" :YOJ, "Nombre de signalements de paiements indus majeurs":DEROG, 
+inputs = {"Civilité" : CIVILITÉ, "Prénom et Nom" : str(FIRSTNAME) +str(' ') +str(LASTNAME), "Montant du prêt demandé":LOAN, "Montant dû sur l’hypothèque existant":MORTDUE, 
+        "Valeur du bien actue":VALUE, "But du prêt":REASON, "Catégorie professionnelle":JOB,  "Nombre d’années d'experience" :YOJ, "Nombre de signalements de paiements indus majeurs":DEROG, 
         "Nombre de lignes de crédit en défaut de paiementA":DELINQ,"Age de la ligne de crédit la plus ancienne en mois":CLAGE, "Nombre de demandes de crédit récentes":NINQ, 
         "Nombre de lignes de crédit":CLNO, "Ratio d'endettement en %":DEBTINC}
 
