@@ -22,12 +22,16 @@ Voici une petite démonstration de l'application créée :
 
 ## Usage
  - Prerequis
- ```pip install -r requirements.txt```
-```py
-    pandas==1.3.5
+ ```pandas==1.3.5
     streamlit==1.4.0
     sklearn
-    scorecardpy 
+    scorecardpy
 ```
+ ```py
+ pip install -r requirements.txt
+ ```
+
  - App Web 
- ```streamlit run app.py```
+ ```py
+ streamlit run app.py
+ ```
