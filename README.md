@@ -1,4 +1,4 @@
-# Scoring_Linux
+# Scoring_HMEQ
 Projet réalisé avec [Yasmine Ouyahya](https://github.com/youyahya) et [Amira Slimene](https://github.com/aslimene).
 
 Le but de ce projet est de réaliser une grille de score permettant d'aider à la décision.
