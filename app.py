@@ -52,7 +52,7 @@ data = pd.read_csv(PATH + "train_clean.csv").drop("Unnamed: 0", axis = 1)
 
 
 st.write("Veuillez remplir le formulaire suivant, il vous prendra environ une minute.")
-
+st.warning("Prenez soin de bien rentrer les valeurs sans mettre d'espace")
 CIVILITÉ = st.selectbox('Civilité', ("M.", "Mme"))
 FIRSTNAME = st.text_input("Entrez votre prénom")
 LASTNAME = st.text_input("Entrez votre nom")
