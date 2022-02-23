@@ -9,45 +9,6 @@ Une personne qui a un  score 1000 points  a une probabilité de défaut de 1/500
 
 Pour la réalisation de ce projet, nous nous sommes inspirés d'un projet fait par [Carl Lejerskar](https://github.com/Carl-Lejerskar). Son projet est trouvable dans le dossier ***RepoInitial*** ou directement [ici](https://github.com/Carl-Lejerskar/HMEQ). Des améliorations et de nouvelles fonctionnalités ont été apportées et se trouvent dans le dossier ***Ameliorations***. 
 
-Notre Grille de score est calibrée sur 1000 points, plus le score est élevé, moins le client a de risque de faire défaut. On fixe les Odds à $\frac{1}{500}$ (500:1) et les PDO (Points Double the Odds) à 30 points. 
-
-Ainsi une personne qui a un  score 1000 points  a une probabilité de défaut de 1/500 alors qu'une personne qui a un score de 1030 (1000 + 30) elle a une une probabilité de défaut égale à $\frac{1}{1000}$ (1000:1 = 2*500:1).
-
-En pratique, la Grille de score est déterminée de la façon suivante :
-
-On détermine la probabilité de défaut $p(y=1)$ par : 
-
-
-       ![formula](https://render.githubusercontent.com/render/math?math= p(y=1) =  \frac{1}{1+exp(-Z)} ) 
-
-    
-    
-avec z qui est la combinaison linéaire des WOE de toutes les variables sélectionnées en entrée 
-
- $\begin{equation}
-    Z   =  b_0 + b_1*WOE_1 + b_2*WOE_2+ ... +b_k*WOE_k 
-\end{equation}$
-$\begin{equation}
-    Z =  log(\frac{p}{1-p})
-    \end{equation}$
-
-Mais comme on sait que :  
-    $\begin{equation}
-        Odds   =  \frac{p}{1-p} 
-    \end{equation}$
-donc
-    $\begin{equation}
-        Z  = log(Odds)
-    \end{equation}$
-- Ensuite on va directement déterminer les points par les formules suivantes : 
-    $\begin{equation}
-    Points   =  Shift + Slope*Z
-    \end{equation}$
-    $\begin{equation}
-    Points + PDO  =  Shift + Slope*log(2*Odds)
-    \end{equation}$
-RQ : Le PDO est positif pour garantir le fait que les scores les plus élevés engendrent les risques les plus faibles.
-
 Ce répertoire est divisé en 2 dossiers l'un contenant les données et l'autre les programmes nommés selon leurs fonctions.
 
 On a créé un outil automatisé permettant selon les caractéristiques entrées de générer le score ainsi que la probabilité de défaut d'un emprunteur. Il est accessible ici [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/aadmberrada/linux_hmeq/main/app.py)
