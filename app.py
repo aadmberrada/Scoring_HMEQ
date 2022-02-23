@@ -103,7 +103,7 @@ def scoring(X, base = 1000, pdo = 30):
     return test_pred
 
 
-score = st.button("Appuyez pour voir votre crédit score")
+score = st.button("Appuyez pour voir votre crédit score ")
 if score:
     if all(val != "" for val in inputs.values()):
         
