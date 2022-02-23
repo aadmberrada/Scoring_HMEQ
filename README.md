@@ -17,9 +17,9 @@ En pratique, la Grille de score est déterminée de la façon suivante :
 
 On détermine la probabilité de défaut $p(y=1)$ par : 
 
-    $\begin{equation}
-       p(y=1) =  \frac{1}{1+exp(-Z)} 
-    \end{equation}$
+
+       ![formula](https://render.githubusercontent.com/render/math?math= p(y=1) =  \frac{1}{1+exp(-Z)} ) 
+
     
     
 avec z qui est la combinaison linéaire des WOE de toutes les variables sélectionnées en entrée 
